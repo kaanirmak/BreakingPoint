@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fire
-  - card_1
   - Card_2
+  - Card_1
   layers:
   - Default
   - TransparentFX

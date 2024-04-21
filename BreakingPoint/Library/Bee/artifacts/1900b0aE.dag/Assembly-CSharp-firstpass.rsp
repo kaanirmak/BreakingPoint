@@ -354,8 +354,6 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Standard Assets/ParticleSystems/Scripts/AfterburnerPhysicsForce.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/ExplosionFireAndDebris.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/ExplosionPhysicsForce.cs"
 "Assets/Standard Assets/ParticleSystems/Scripts/ExtinguishableParticleSystem.cs"
 "Assets/Standard Assets/ParticleSystems/Scripts/FireLight.cs"
 "Assets/Standard Assets/ParticleSystems/Scripts/Hose.cs"
