@@ -4,7 +4,6 @@ ScriptsOnlyBuild:
     - UnityStandardAssets.Effects.ParticleSystemMultiplier
     Assembly-CSharp.dll:
     - BoardController
-    - CameraFacing
     - NewBehaviourScript
     - Trigger
     Unity.Rider.Editor.dll:
@@ -13,7 +12,18 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses: {}
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Text
+  serializedClasses:
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.PersistentCallGroup
+    UnityEngine.UI:
+    - UnityEngine.UI.FontData
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -43,21 +53,37 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4512}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 4678}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 3692}
     - Class: 114
-      Script: {instanceID: 23086}
+      Script: {instanceID: 4530}
+    - Class: 114
+      Script: {instanceID: 4696}
+    - Class: 114
+      Script: {instanceID: 4858}
+    - Class: 114
+      Script: {instanceID: 5242}
+    - Class: 114
+      Script: {instanceID: 5538}
+    - Class: 114
+      Script: {instanceID: 6004}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -66,6 +92,12 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Scene_1.unity:
     - Class: 1
@@ -106,6 +138,12 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 294c90fb26646e39b31f330856da3731
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExtendedFlycam
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -204,6 +242,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 98340b137b2c68765166d90824831f52
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: AfterburnerPhysicsForce
+  - hash:
+      serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -282,6 +326,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 3c9efede5efcf06f71342438c190b1f4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraFacing
+  - hash:
+      serializedVersion: 2
       Hash: 6d394de691f6d0187f61c08889353d0e
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -298,6 +348,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 90343c7a5bd61095376074f2b4ee1af7
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: SmokeParticles
   - hash:
       serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
@@ -412,6 +468,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 3b32b3d10bfd3b22e7097efef08595d9
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: ParticleSystemMultiplier
   - hash:
       serializedVersion: 2
       Hash: fb79e95da8891fc7ac6c36ca6967af23
@@ -588,7 +650,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 97e211d2e263a82c287bcc8284dabf9b
+      Hash: 2cc650ecd4a7e63696085d0798ea3219
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Trigger
@@ -750,6 +812,12 @@ ScriptsOnlyBuild:
     className: UnityOnDragMessageListener
   - hash:
       serializedVersion: 2
+      Hash: f7293c250006a0a9ec49e78f5285aa11
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: FireLight
+  - hash:
+      serializedVersion: 2
       Hash: 20a120e55ad3ab65556328d5fd8309dd
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -822,6 +890,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
+      Hash: e1b8824aa429009f357f4d39fe02171a
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: ExtinguishableParticleSystem
+  - hash:
+      serializedVersion: 2
       Hash: ee34255e3e86289bde9bad5e07b84cbc
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -876,6 +950,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: c50527593dcdf86ecfe5bb4548ccb411
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: WaterHoseParticles
+  - hash:
+      serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -924,6 +1004,12 @@ ScriptsOnlyBuild:
     className: UnityOnToggleValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 297aef046cf513336ab8c3da5ec57de1
+    assemblyName: Assembly-CSharp-firstpass
+    namespaceName: UnityStandardAssets.Effects
+    className: Hose
+  - hash:
+      serializedVersion: 2
       Hash: 8bf800a764665b085fe469e8aea7f167
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -946,75 +1032,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 15e2d2de2b2ad7aa8332c7a228dcfaa2
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: ExplosionFireAndDebris
-  - hash:
-      serializedVersion: 2
-      Hash: 297aef046cf513336ab8c3da5ec57de1
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: Hose
-  - hash:
-      serializedVersion: 2
-      Hash: f7293c250006a0a9ec49e78f5285aa11
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: FireLight
-  - hash:
-      serializedVersion: 2
-      Hash: 3b32b3d10bfd3b22e7097efef08595d9
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: ParticleSystemMultiplier
-  - hash:
-      serializedVersion: 2
-      Hash: e1b8824aa429009f357f4d39fe02171a
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: ExtinguishableParticleSystem
-  - hash:
-      serializedVersion: 2
-      Hash: 90343c7a5bd61095376074f2b4ee1af7
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: SmokeParticles
-  - hash:
-      serializedVersion: 2
-      Hash: b64144b75852b773a021e31f5b1c4fa1
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: ExplosionPhysicsForce
-  - hash:
-      serializedVersion: 2
-      Hash: c50527593dcdf86ecfe5bb4548ccb411
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: WaterHoseParticles
-  - hash:
-      serializedVersion: 2
-      Hash: 98340b137b2c68765166d90824831f52
-    assemblyName: Assembly-CSharp-firstpass
-    namespaceName: UnityStandardAssets.Effects
-    className: AfterburnerPhysicsForce
-  - hash:
-      serializedVersion: 2
-      Hash: 294c90fb26646e39b31f330856da3731
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ExtendedFlycam
-  - hash:
-      serializedVersion: 2
-      Hash: 3c9efede5efcf06f71342438c190b1f4
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraFacing
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/Scene_1.unity
   - Assets/Scenes/Scene_2.unity
-  playerPath: "C:/Users/kaanr/Masa\xFCst\xFC/My/Build/My.exe"
+  playerPath: "C:/Users/kaanr/Masa\xFCst\xFC/BreakingPoint/BreakingPoint/Build/My.exe"
