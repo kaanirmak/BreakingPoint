@@ -16,12 +16,12 @@ public class Trigger : MonoBehaviour
     {
         if (collision.collider.CompareTag("Card_2"))
         {
-            Destroy(Card_1);
+            Destroy(Card_2);
             StartCoroutine(PlayMusicThenLoadScene(option_1));
         }
         else if (collision.collider.CompareTag("Card_1"))
         {
-            Destroy(Card_2);
+            Destroy(Card_1);
             StartCoroutine(PlayMusicThenLoadScene(option_2));
         }
     }
